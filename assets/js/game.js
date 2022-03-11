@@ -5,7 +5,7 @@ var playerAttack = 10;
 var playerMoney = 10;
 
 // Enemy robot variables
-var enemyNames = ["Roborto ", "Amy Android ", "Robo Trumble"];
+var enemyNames = ["Roborto ", " Amy Android ", " Robo Trumble"];
 var enemyHealth = 50;
 var enemyAttack = 12;
 
@@ -80,7 +80,9 @@ console.log(fight())
 }
 
 for(var i = 0; i < enemyNames.length; i++) {
-  fight(enemyNames[i]);
+  var pickedEnemyName = enemyNames[i];
+  enemyHealth = 50;
+  fight(pickedEnemyName)
 }
 
 // Game States
